@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Wonders</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    
+<header class="header container">
+    <div class= "header-left">
+        <svg class="header-logo" width="73" height="34" viewBox="0 0 73 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M59.2163 24.5786V20.3137L56.8388 17.985L59.2303 19.3378V12.2281L50.3323 22.2163L47.6113 25.4222L51.3615 23.0116L46.9352 27.6512L46.2931 30H44.3848H40.4802H33.5049L40.4802 28.5327V25.9956V19.5777V3.49431L33.7795 13.7348H36.0542L32.6121 21.8674L29.3541 23.4939L32.1196 24.8199L31.2612 26.3138L28.935 30H25.2665H24.4466H14.3859L24.4466 29.253V25.2797L24.5119 18.2531L21.4236 18.705L24.5886 16.9879L24.6814 12.2594L17.9196 19.2773L18.288 20.9643L14.1075 24.278L16.0133 23.735L9.76091 30H6.27066H5.51648H0L6.36248 28.1088L9.55835 20.9632L13.1242 21.6868L25.2962 8.07215L30.4598 17.7102L32.3042 9.51804L39.5581 0H42.3856L45.4529 8.25277L49.3375 10.7306L50.8526 17.9356L59.2303 9.39784L62.1637 12.1666L68.4511 25.5421L73 30H61.1676H59.7997H59.2303H50.287L59.2303 29.0353V28.0559L56.1492 26.3138L59.2163 24.5786Z" fill="#202020"/>
+</svg>
+
+        <h1 class="header-title" style="font-weight: 400; font-size: 34px;">Wonders</h1>
+    </div>
+    <nav id="header-nav" class="header-nav">
+        <a href="#">Mobile App</a>
+        <a href="#">FAQs</a>
+        <a href="#">Contact</a>
+        <a href="#" style="font-weight: 600;">Sign Up</a>
+    </nav>
+    
+
+    <div id="burger-icon" class="burger-icon">
+            <div id="line1" class="line1"></div>
+            <div id="line2" class="line2"></div>
+            <div id="line3" class="line3"></div>
+            </div>
+
+        <div id="burger-menu" class="burger-menu hidden">
+            <nav>
+        <a href="#">Mobile App</a>
+        <a href="#">FAQs</a>
+        <a href="#">Contact</a>
+        <a href="#" style="font-weight: bold;">Sign Up</a>
+        </nav>
+        </div>
+
+</header>
+
+<main class="main">
+    <div class="hero-section">
+        <div class="text-container">
+            <h1 class="text">Skip the Climbing, Catch the Bus</h1>
+            <p class="paragraph">We sell tickets to the best seats in the house – houses on wheels, that is!<br>Get ready for jaw-dropping views without breaking a sweat.</p>
+
+            <div class="trip-options">
+                <div class="radio-1">
+                    <label class="custom-radio">
+                        <input type="radio" name="tripType" class="input-radio" id="oneWay">
+                        <span></span>
+                        <span class="custom-radio-span">One Way</span>
+                    </label>
+                </div>
+
+                <div class="radio-2">
+                    <label class="custom-radio">
+                        <input type="radio" name="tripType" class="input-radio" id="roundTrip">
+                        <span></span>
+                        <span class="custom-radio-span">Round Trip</span>
+                    </label>
+                </div>
+
+                <div class="passenger-counter">
+                    <button class="passenger-button" id="decrease-passenger">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.21994 9.21973C4.77994 9.21973 4.43994 9.55973 4.43994 9.99973C4.43994 10.4397 4.77994 10.7797 5.21994 10.7797H14.7799C15.2199 10.7797 15.5599 10.4397 15.5599 9.99973C15.5599 9.55973 15.2199 9.21973 14.7799 9.21973H5.21994Z" fill="#0578FF" fill-opacity="0.5" />
+                        </svg>
+                    </button>
+                    <span id="number-of-passenger" class="passenger-number">1</span>
+                    <button class="passenger-button" id="increase-passenger">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.21859 9.2181H5.22354C4.79185 9.2181 4.44189 9.56805 4.44189 9.99974C4.44189 10.4314 4.79185 10.7814 5.22354 10.7814H9.21859V14.7764C9.21859 15.2081 9.56854 15.5581 10.0002 15.5581C10.4319 15.5581 10.7819 15.2081 10.7819 14.7764V10.7814H14.7769C15.2086 10.7814 15.5586 10.4314 15.5586 9.99974C15.5586 9.56805 15.2086 9.2181 14.7769 9.2181H10.7819V5.22305C10.7819 4.79136 10.4319 4.44141 10.0002 4.44141C9.56854 4.44141 9.21859 4.79136 9.21859 5.22305V9.2181Z" fill="#0578FF" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="departure-arrival-menu">
+                <div class="departure">
+                    <label class="departure-label" for="departure-input">Departure</label>
+                    <input id="departure-input" placeholder="Your City/Station" />
+                    <ul id="autocomplete-dropdown" class="autocomplete-dropdown hidden">
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="arrival">
+                    <label class="departure-label" for="arrival-input">Arrival</label>
+                    <input id="arrival-input" placeholder="Where to?" />
+                    <ul id="autocomplete-dropdown-arrival" class="autocomplete-dropdown hidden">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="date-group">
+	<label class="date-title" for="depart">Pick your lucky day</label>
+	<div class="date-row">
+		<input class="depart-input" type="date" id="depart" name="depart" placeholder="Depart">
+		<input class="return-input" type="date" id="return" name="return" placeholder="Return">
+	</div>
+</div>
+
+            <button class="hero-button" id="findRideBtn">Find My Alpine Ride</button>
+        </div>
+
+        <div class="hero-image">
+            <img src="./assets/images/Hero.png" alt="Hero Image"/>
+        </div>
+    </div>
+
+    <div class="statistics">
+        <div class="statistics-container">
+            <div class="statistics-unit">
+                <span class="big-numbers-statistics">68k+</span>
+                <br>
+                <span class="small-numbers-statistics">Track kilometers</span>
+            </div>
+            <div class="statistics-unit">
+                <span class="big-numbers-statistics">1.4M+</span>
+                <br>
+                <span class="small-numbers-statistics">Photos Taken</span>
+            </div>
+            <div class="statistics-unit">
+                <span class="big-numbers-statistics">23M+</span>
+                <br>
+                <span class="small-numbers-statistics">Altitude Gained</span>
+            </div>
+            <div class="statistics-unit">
+                <span class="big-numbers-statistics">165+</span>
+                <br>
+                <span class="small-numbers-statistics">Years of history</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="gallery">
+        <div class="gallery-container">
+            <h1 class="gallery-container-h">Glimpses of Glory</h1>
+            <div class="gallery-images">
+                <div class="images1">
+                    <img class="image1" src="./assets/images/ing01.png" alt="Mountain road with snow">
+                    <img class="image2" src="./assets/images/ing02.png" alt="Bus on mountain road">
+                </div>
+                <div class="images2">
+                    <img class="image3" src="./assets/images/ing03.png" alt="Mountain peak">
+                    <img class="image4" src="./assets/images/ing04.png" alt="Mountain road with green hills">
+                    <img class="image5" src="./assets/images/ing05.png" alt="Foggy mountain road">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="apps" id="app">
+       <div class="container">
+           <div class="apps-container">
+               <h1 class="apps-container-h">Free downloads app now!</h1>
+               <div class="apps-images">
+                   <a href="#">
+                       <img class="app1" src="./assets/icons/googleplay.png" alt="apps"/>
+                   </a>
+                   <a href="#">
+                       <img class="app2" src="./assets/icons/huawei.png" alt="apps"/>
+                   </a>
+                   <a href="#">
+                       <img class="app3" src="./assets/icons/apple.png" alt="apps"/>
+                   </a>
+               </div>
+           </div>
+       </div>
+    </section>
+
+
+     <section class="faq" id="faq">
+       <div class="container">
+           <div class="faq-container">
+               <h1 class="faq-container-h">FAQs.</h1>
+               <details>
+                   <summary>Alpine Bus Journeys?</summary>
+                   <p>Forget crowded cities! Alpine Bus Journeys are your comfy seat with panoramic windows to breathtaking mountain vistas, charming villages, and air so fresh it might make you yodel (please don't, unless you're outside). It's transportation with a side of unparalleled scenery (and maybe a hairpin turn).
+                   </p>
+               </details>
+               <hr>
+               <details>
+                   <summary>What about seating options?</summary>
+                   <p>Generally, you'll find comfy standard seats (great views, great value, maybe great new friends) and perhaps slightly better seats with extra legroom. All offer a front-row seat to the greatest show on Earth – the Alps!
+                   </p>
+               </details>
+               <hr>
+               <details>
+                   <summary>What is the Alpine Wallet?</summary>
+                   <p>It's your digital stash of cash that makes booking bus tickets smoother than a perfectly paved mountain road. Load it up and watch your travel dreams become reality faster than a bus goes downhill.
+                   </p>
+               </details>
+               <hr>
+               <details>
+                   <summary>My Altitude Score?</summary>
+                   <p>Your loyalty points for cruising the mountain roads! Higher scores might get you priority boarding (less elbowing for the best window seat!) or maybe just bragging rights among fellow peak-passengers who prefer four wheels.
+                   </p>
+               </details>
+               <hr>
+               <details>
+                   <summary>Why a Bus Station Fee?</summary>
+                   <p>A small contribution to ensure the station is clean, has reasonably fresh mountain air (filtered from bus fumes), and enough signs pointing you towards your bus, not away from it. Sometimes covers the cost of moving rogue bicycles.
+                   </p>
+               </details>
+               <hr>
+               <details>
+                   <summary>Why are buses late?</summary>
+                   <p>Sometimes it's the weather (snow happens!), sometimes a sudden flock of particularly slow-moving sheep on the road, and sometimes the driver just had to stop for a photo of that view. Or maybe they got stuck behind a tractor. Welcome to "Mountain Road Time"!
+                   </p>
+               </details>
+               <hr>
+               <details>
+                   <summary>Peak Season Surcharge?</summary>
+                   <p>It's the little extra you pay to enjoy the authentic experience of sharing breathtaking views with a lot of your closest friends (who you haven't met yet) while strategically placing your bag in the overhead compartment. Guarantees a vibrant, energetic journey!
+                   </p>
+               </details>
+           </div>
+       </div>
+    </section>
+</main>
+
+   <footer class="footer">
+        <div class="footer-label-and-links-container">
+            <div  class="footer-label">
+                <a href="#header">
+                <img class="footer-picture" src="assets/images/footer-picture.png" alt="Footer label">
+                </a>
+            </div>
+            <div class="footer-links-container">
+                <div class="footer-links-list-container">
+                    <div class="footer-links-header">About</div>
+                    <nav class="footer-links-list">
+                        <a class="footer-links-item" href="">How it works</a>
+                        <a class="footer-links-item" href="">Featured</a>
+                        <a class="footer-links-item" href="">Partnership</a>
+                        <a class="footer-links-item" href="">Business Relation</a>
+                    </nav>
+                </div>
+                <div class="footer-links-list-container">
+                    <div class="footer-links-header">Community</div>
+                    <nav class="footer-links-list">
+                        <a class="footer-links-item" href="">Events</a>
+                        <a class="footer-links-item" href="">Blog</a>
+                        <a class="footer-links-item" href="">Podcast</a>
+                        <a class="footer-links-item" href="">Invite a friend</a>
+                    </nav>
+                </div>
+                <div class="footer-links-list-container">
+                    <div class="footer-links-header">Socials</div>
+                    <nav class="footer-links-list">
+                        <a class="footer-links-item" href="#">Discord</a>
+                        <a class="footer-links-item" href="#">Instagram</a>
+                        <a class="footer-links-item" href="#">Twitter</a>
+                        <a class="footer-links-item" id="footerLinksItem" href="">Facebook</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="all-rights-container">
+            <div class="all-rights-text-container">English: © 2025 Peak Passages.<br>All Rights Reserved (Especially the Window Seats).</div>
+        </div>
+    </footer>
+</body>
+</html>
