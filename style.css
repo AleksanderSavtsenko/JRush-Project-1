@@ -155,6 +155,149 @@ body {
     color: #90a3bf;
 }
 
+.date-input-button {
+    padding: 15px 24px;
+    background: #FFFFFF;
+    border: none;
+    color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 305px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.calendar {
+    margin-top: 16px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    padding: 24px 40px;
+    max-width: 640px;
+    display: none;
+    position: absolute;
+}
+.calendar.active {
+    display: block;
+}
+
+
+.calendar .months {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+
+.calendar .month {
+    min-width: 0;
+}
+
+.calendar-header {
+    display: grid;
+    grid-template-columns: 32px 1fr 32px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.calendar-header .month-year {
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.nav-btn {
+    height: 32px;
+    width: 32px;
+    border: none;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background: #F1F3F7;
+}
+
+.header-spacer { width: 32px; }
+
+.calendar-body .weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    color: var(--secondary-text-color);
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+}
+
+.calendar-body .weekdays span {
+    text-align: center;
+}
+
+.calendar-body .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-body .dates .date,
+.calendar-body .dates .empty {
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-text-color);
+    background: transparent;
+    border: none;
+}
+
+.calendar-body .dates .date {
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.calendar-body .dates .date:hover {
+    background: #EFF4FF;
+    color: var(--primary-blue-train);
+}
+
+.calendar-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 16px;
+    gap: 16px;
+}
+
+.reset-btn {
+    border: none;
+    background: transparent;
+    color: var(--secondary-text-color);
+    cursor: pointer;
+}
+
+.apply-btn {
+    border: none;
+    background: var(--primary-blue-train);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .calendar .months {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .calendar {
+        padding: 16px;
+    }
+}
+
+
 .burger-icon {
     flex-direction: column;
     cursor: pointer;
@@ -883,7 +1026,7 @@ details p{
 }
 
 .depart-input, .return-input {
-	background: #fff url("./assets/images.svg/calendar.png") 
+	background: #fff url("./assets/icons/calendar.png") 
     no-repeat 16px center;
 	padding-left: 48px;
 	color: var(--primary-grey);
